@@ -9,6 +9,8 @@
 #import <React/RCTDefines.h>
 #import <WebKit/WebKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class RCTWKWebView;
 
 @protocol RCTWKWebViewDelegate <NSObject>
@@ -45,3 +47,5 @@ shouldStartLoadForRequest:(NSMutableDictionary<NSString *, id> *)request
 - (void)stopLoading;
 
 @end
+
+NS_ASSUME_NONNULL_END
